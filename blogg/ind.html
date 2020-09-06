@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Words Of MiNe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script>
+
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 200) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 400); 
+        return false; 
+    }); 
+});
+</script>
+
+</head>
+<style>
+
+</style>
+
+<body>
+    
+<!--    Navbar Start -->
+	<a href="#" id="scroll" style="display: none;"><span></span></a>
+<header class="navbar-fixed-top" >
+<nav class="navbar navbar-default" id="nav1"> 
+  <div class="container">
+    <div class="navbar-header">
+      <button id="navbtn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="logo" >Words of MiNe</a>
+    </div>
+    <div class="collapse navbar-collapse" id="mynavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#images" >&nbsp;&nbsp;Home&nbsp;&nbsp;</a></li>
+      <li ><a href="#gallerimg">&nbsp;&nbsp;Gallery&nbsp;&nbsp;</a></li>
+               <li><a href="#contus">Contact </a></li>
+      <li><a href="#abtus">About us </a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+</header>
+<!--    Navbar End -->
+<br><br><br><br><br>
+<!--    carousel slider Start -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <div id="images" class="carousel-inner">
+    <div class="item active">
+      <img src="background.png" style="width: 100%;" alt="pics">
+    </div>
+
+    <div class="item">
+      <img src="bg7.jpg" style="width: 100%;" alt="pics">
+    </div>
+
+    <div class="item">
+      <img src="bg8.jpg" style="width: 100%;" alt="pics">
+    </div>
+  </div>
+</div>
+ <br>
+ <div id="gallerimg" >
+<br>
+
+
+
+
+
+ <div style="text-align:center;"  >
+ <h2 style="background-color:#FF6699; color:#black;font-family:Serif;font-size:35px;"><br>Image Gallery<br><br> </h2>
+ </div><br>
+ <div class="container" class="row" style="width: 100%;">
+   <div class="column">
+    <img src="img1.jpg" style="width:25%"  class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img2.jpg" style="width:25%"  class="hover-shadow cursor">
+  </div>
+    <div class="column">
+    <img src="img3.jpg" style="width:25%"  class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img4.jpg" style="width:25%"  class="hover-shadow cursor">
+  </div>
+    <div class="column">
+    <img src="img5.jpg" style="width:25%"  class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img6.jpg" style="width:25%"  class="hover-shadow cursor">
+  </div>
+    <div class="column">
+    <img src="img7.jpg" style="width:25%"  class="hover-shadow cursor">
+  </div>
+
+   <div class="column">
+    <img src="img8.jpg" style="width:25%"  class="hover-shadow cursor">
+  </div>
+ </div>
+</div>
+
+<div id="contus">
+ <br><br>
+
+
+ <h2 style="background-color:#FF6699; color:#black;font-family:Serif;font-size:35px; text-align:center; "><br>Contact us <br><br></h2>
+ <div class="container" >
+   <div class="col-md-5">
+    <img src="img.jpg" style="width: 100%;height:300px;">
+   </div>
+<br><br><br>
+   <div class="col-md-5">
+   	<form>
+     <input type="text" title="Your Name" class="responsive" style="background-color:#e3e3e3; border-radius:2px;width:100%; padding:10px; text-decoration:none; border:none; outline:none;display: inline-block; vertical-align: top;position: relative; height:40px;"required class="from-control" placeholder="Your Name*">
+<br>
+<br><input type="email"  title="Email Address" id="contt" required class="from-control" class="responsive" style="background-color:#e3e3e3; border-radius:2px;width:47%; padding:10px; text-decoration:none; border:none; outline:none;display: inline-block; vertical-align: top;position: relative; height:40px;" placeholder="Email Address*">
+
+<input type="text" id="contt1"  title="Number" required class="from-control" class="responsive" style="background-color:#e3e3e3; border-radius:2px;width:50%; padding:10px; text-decoration:none; border:none; outline:none;display: inline-block; vertical-align: top;position: relative; height:40px;" placeholder="+92">
+<br>
+<br>
+
+<input type="text" placeholder="Message"  title="Message" required class="from-control" class="responsive" style="background-color:#e3e3e3; border-radius:2px;width:100%; padding:10px; text-decoration:none; border:none; outline:none;display: inline-block; vertical-align: top;position: relative; height:100px;">
+   </div>
+
+ </div>
+</div>
+<div class="container">
+	<div class="col-md-4"></div>
+		<div class="col-md-1">
+</div>
+
+	<div class="col-md-7">
+		<button  style="color: white;background-color: #00979d;" class="btn btn-large">Submit</button>
+	</div>
+</div>
+</form>
+
+
+ <div id="abtus">
+ 	 <br> <br>
+ <h2 style="background-color:#FF6699; color:#black;font-family:Serif;font-size:35px; text-align:center;"><br>About Us <br><br></h2>
+ </div>
+ <div class="container-fluid" style="background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,235,225,1) 75%, rgba(0,212,255,1) 100%);color: white;"><br>
+  <p style="text-align: center;font-size: 18px;  font-family:Monospace;">
+    I enjoy shining a flashlight into the darkness. For me, the basic job of a writer is to bring the world into 
+	focus and cast some illumination. I particularly enjoy helping my students see what hides behind the doorway of the writing life. 
+	This doesn’t mean I have all the answers of course (no one can master the craft of writing in a single lifetime), 
+	but I’d like to think I’ve gathered enough useful ideas along the way. What follows isn’t a list of commandments that must be followed no matter what. Instead, 
+	I consider them “personal rules” that I keep in the front of my mind whenever I sit down at my desk. But like all rules, I sometimes break them. Such is life.
+	And so, what follows are some observations that have worked for me. The language in which we expressed it doesn’t important. The truth behind that words is the main purpose
+	
+</p><br>
+	<p style="text-align: center;font-size: 18px;  font-family:Monospace;"> 
+		This is the link for our contents: <a href="https://marathi.pratilipi.com/user/8joq560y95?utm_campaign=SharedProfile&utm_source=whatsapp"> <strong>Click Here</strong>
+	</p><br>
+ </div>
+
+
+<br>
+
+<footer>
+<div class="container">
+<div class="row">
+<h2 style="text-align:center;" id="hbv">Follow us on</h2><br></div>
+<div id="footer1" style="text-align: center;">
+<form><input title="Search" type="search" placeholder="Email Address" /><button style="margin-top:-2px;" class="btn btn-large" title="Submit">Join Us</button></form></div>
+</div>
+</div>
+
+
+<div class="col-md-4 col-sm-4 col-lg-4 col-xl-4"></div>
+
+</div></div>
+</div>
+<hr>
+<br>
+<div class="container" >
+    <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4" id="cbb">
+<ul>
+<li><a href="https://www.facebook.com/" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>&nbsp;
+<li><a href="https://twitter.com/login?lang=en" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>&nbsp;
+<li><a href="https://accounts.google.com/ServiceLogin/signinchooser?passive=1209600&continue=https%3A%2F%2Faboutme.google.com%2Fu%2F0%2F%3Freferer%3Dgplus&followup=https%3A%2F%2Faboutme.google.com%2Fu%2F0%2F%3Freferer%3Dgplus&flowName=GlifWebSignIn&flowEntry=ServiceLogin" title="Google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>&nbsp;
+<li><a href="https://www.linkedin.com/uas/login?" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>&nbsp;
+<li><a href="https://www.instagram.com/__shabdh_manaatle__/" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+  <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4"></div>
+
+  <div class="col-md-4 col-sm-4 col-lg-4 col-xl-4" id="footertext">
+      <p style="margin-top:-44px; font-size:15px; font-weight: bold; font-family:Monospace; ">Copyright © __shabdh_manaatle__/ by <br>Mansi Malap.<br><a style="color: white; " id="textt" href="#"></a> </p><br>
+  </div>
+</div>
+<br><br>
+</footer>
+
+ <!--  Footer  End -->
+                                             
+</body>
+</html>
